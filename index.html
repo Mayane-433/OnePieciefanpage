@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece: Rumo ao Rei dos Piratas</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👒%3C/text%3E%3C/svg%3E">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2ntuN7dM3/sIAdLvl2/IkwY" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <div id="main-container">
+
+        <header>
+            <h1>BIG NEWS MORGANS</h1>
+            
+            <nav id="navbar" class="topnav">
+                <a href="#home" onclick="showPage('home'); return false;">Início</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="return false;">O Mundo de One Piece ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#grand-line" onclick="showPage('grand-line'); return false;">Grand Line</a>
+                        <a href="#personagens" onclick="showPage('personagens'); return false;">Personagens</a>
+                    </div>
+                </div>
+
+                <a href="#contato" onclick="showPage('contato'); return false;">Contato</a>
+                
+                <a href="https://onepiece.fandom.com/wiki/Main_Page" target="_blank" class="link-marinho">Fandom Oficial ↗</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+            </nav>
+        </header>
+
+       
+        <main>
+
+            <section id="home" class="page-content">
+                
+                <h2>Embarque na Maior Aventura do Mundo</h2>
+                
+                <div class="clearfix">
+                
+                    <img 
+                        src="https://img.odcdn.com.br/wp-content/uploads/2023/10/imagem_2023-10-16_100425798.png" 
+                        alt="Mapa da Grand Line de One Piece" 
+                        class="float-info imagem-flutuante"
+                    >
+
+                    <p class="paragrafo-aventura">
+                        <strong>One Piece</strong> é uma obra monumental de Eiichiro Oda, que narra a história de <em>Monkey D. Luffy</em> e sua tripulação, os Piratas do Chapéu de Palha. O objetivo de Luffy é se tornar o <strong>Rei dos Piratas</strong> encontrando o lendário tesouro deixado pelo falecido Rei dos Piratas, Gol D. Roger. Esta jornada épica é repleta de ação, comédia, drama e a busca incansável pela liberdade e aventura. A cada ilha, a tripulação enfrenta novos desafios e inimigos poderosos, revelando mais sobre a história perdida do mundo.
+                    </p>
+                </div>
+                
+                <h3>Trailer Oficial da Netflix</h3>
+                <div class="video-container">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/1KMcoJBMWE4" title="One Piece | We&#39;re Just Getting Started Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               
+                <h3>Navios Notáveis e Suas Tripulações</h3>
+                <ul class="lista-navios">
+                <li><a href="https://onepiece.fandom.com/pt/wiki/Going_Merry">
+                    Going Merry: O primeiro navio dos Chapéus de Palha, cheio de alma.
+                </a></li>
+                <li><a href="https://onepiece.fandom.com/pt/wiki/Thousand_Sunny">
+                    Thousand Sunny: O navio atual, construído por Franky com madeira Adam.
+                </a></li>
+                <li><a href="https://onepiece.fandom.com/pt/wiki/Red_Force">
+                    Red Force: O majestoso navio do Yonkou Shanks
+                </a></li>
+                <li><a href="https://onepiece.fandom.com/pt/wiki/Moby_Dick">
+                    Moby Dick: O navio do poderoso Barba Branca.
+                </a></li>
+                    
+                </ul>
+
+                <a href="https://www.crunchyroll.com/series/GRMBZJM7R/one-piece" target="_blank" class="btn-div-acao">
+                    Ver Episódios na Crunchyroll!
+                </a>
+            </section>
+
+            <section id="grand-line" class="page-content" style="display:none;">
+
+                <h2>Grand Line: O Mar dos Sonhos e Pesadelos</h2>
+                <div class="grid-container-grandline">
+                    
+                    <div class="grid-item">
+                        <p class="paragrafo-aventura">
+                            A Grand Line é um dos quatro oceanos do mundo de One Piece e é considerado o mais perigoso de todos. A única maneira de navegar por ele é usando um <strong>Log Pose</strong>, uma bússola especial que se ajusta ao campo magnético de cada ilha.
+                        </p>
+                    </div>
+
+                    <div class="grid-item">
+                         <svg class="log-pose-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#fcfcfc" stroke="#a0522d" stroke-width="4"/>
+                            <circle cx="50" cy="50" r="10" fill="#a0522d"/>
+                            <line x1="50" y1="50" x2="50" y2="5" stroke="#ff0000" stroke-width="3" id="ponteiro-logpose"/>
+                            <text x="50" y="95" font-size="8" text-anchor="middle" fill="#333">LOG POSE</text>
+                            <text x="50" y="15" font-size="8" text-anchor="middle" fill="#333">N</text>
+                            <text x="95" y="55" font-size="8" text-anchor="end" fill="#333">E</text>
+                            <rect x="0" y="0" width="100" height="100" fill="transparent" onclick="destacarLogPose()"/>
+                        </svg>
+                    </div>
+
+                    <div class="grid-item span-two">
+                         <h4>A Divisão da Grande Linha</h4>
+                        <p>A Grand Line é dividida em duas metades pela linha equatorial, que se cruza com a <strong>Red Line </strong>(o grande continente que circunda o mundo):</p>
+                    </div>
+                </div>
+               
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Região</th>
+                            <th>Localização</th>
+                            <th>Perigos Comuns</th>
+                            <th>Foco Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Paradise</strong></td>
+                            <td>Primeira metade da Grand Line, antes de Mary Geoise.</td>
+                            <td>Piratas novatos, mudanças climáticas imprevisíveis.</td>
+                            <td>Aprender a navegar e sobreviver.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Novo Mundo</strong></td>
+                            <td>Segunda metade, após a Red Line.</td>
+                            <td>Yonkou (Quatro Imperadores), Almirantes, fenômenos extremos.</td>
+                            <td>Poder, estratégia e a busca pelo One Piece.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="line-space-1-5">Navegar no Novo Mundo exige muito mais do que apenas coragem; exige uma tripulação forte e um navio que resista aos climas mais hostis.</p>
+            </section>
+
+            <section id="personagens" class="page-content" style="display:none;">
+
+                <h2>Os Piratas do Chapéu de Palha</h2>
+                <div id="tripulacaoCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#tripulacaoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#tripulacaoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#tripulacaoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+            <img src="https://i.ibb.co/L5rK30r/luffy.png" class="d-block w-100" alt="Monkey D. Luffy" style="max-height: 400px; object-fit: contain;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Monkey D. Luffy - Capitão</h5>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://i.ibb.co/VMyh02S/zoro.png" class="d-block w-100" alt="Roronoa Zoro" style="max-height: 400px; object-fit: contain;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Roronoa Zoro - Espadachim</h5>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://i.ibb.co/6P6X13p/nami.png" class="d-block w-100" alt="Nami" style="max-height: 400px; object-fit: contain;">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Nami - Navegadora</h5>
+            </div>
+        </div>
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#tripulacaoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tripulacaoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+                
+                <div id="luffy-bio" class="line-space-1-5">
+                    
+                    <h3 id="luffy-anchor">Monkey D. Luffy</h3>
+                    <p class="paragrafo-aventura">
+                        O capitão. Luffy possui a Akuma no Mi <strong>Hito Hito no Mi, Modelo: Nika</strong>, que lhe permite se esticar e se transformar em um ser de borracha com a forma <strong>Gear 5</strong>. Ele valoriza a liberdade acima de tudo e fará o impossível para proteger seus amigos. Seu sonho é se tornar o <strong>Rei dos Piratas</strong>.
+                    </p>
+                </div>
+
+                <h4>Recompensas Atuais</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Posição</th>
+                            <th>Recompensa (Beli)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monkey D. Luffy</td>
+                            <td>Capitão, <em>Atual yonkou, futuro Rei dos Piratas</em></td>
+                            <td><strong>3.000.000.000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Roronoa Zoro</td>
+                            <td>Imediato, <em>Espadachim</em></td>
+                            <td><strong>1.111.000.000</strong></td>
+                        </tr>
+                         <tr>
+                            <td>Nami</td>
+                            <td>Navegadora, <em>Gata Ladra</em></td>
+                            <td><strong>366.000.000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Usopp</td>
+                            <td>Atirador, <em>Deus Usopp</em></td>
+                            <td><strong>500.000.000</strong></td>
+                        <tr>
+                            <td>Sanji</td>
+                            <td>Cozinheiro, <em>Perna negra</em></td>
+                            <td><strong>1.032.000.000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Chopper</td>
+                            <td>Médico, <em>Amante de algodão doce</em></td>
+                            <td><strong>1.000</strong></td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Nico Robin</td>
+                            <td>Arqueóloga, <em>Sobrevivente de Ohara</em></td>
+                            <td><strong>930.000.000</strong></td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Franky</td>
+                            <td>Carpinteiro, <em>Cyborg Franky</em></td>
+                            <td><strong>394.000.000</strong></td>
+                        <tr>
+                            <td>Brook</td>
+                            <td>Músico, <em>Soul King</em></td>
+                            <td><strong>383.000.000</strong></td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Jinbe</td>
+                            <td>Timoneiro, <em>Cavaleiro do Mar</em></td>
+                            <td><strong>383.000.000</strong></td>
+                        
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contato" class="page-content container" style="display:none;">
+                
+                <h2>Fale Conosco, Marujo!</h2>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3 class="mt-4">Inscrição para NOVO RECRUTA!!!</h3>
+                        <form id="recrutaForm" method="POST" action="/submit-recruta">
+                            
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">CPF (Apenas números)</label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" maxlength="11" placeholder="Ex: 12345678900" required>
+                                <div class="invalid-feedback" id="cpfFeedback"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone (DDD + Número)</label>
+                                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Ex: 11987654321" required>
+                                <div class="invalid-feedback" id="telefoneFeedback"></div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="aceite" name="aceite" required>
+                                <label class="form-check-label" for="aceite">Aceito ser um Pirata do Chapéu de Palha!</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="btnSubmitForm">Enviar Candidatura</button>
+                        </form>
+                    </div>
+
+                    <div class="row">
+        
+        <div class="col-md-5 mt-4">
+            <h3 class="mt-4">Localização da Justiça (Sede da Marinha)</h3>
+            <p class="line-space-1-5">O ponto de partida da Grande Frota.</p>
+             <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117075.76043219493!2d-46.38605553654467!3d-23.963496924519958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce182c61e893e3%3A0x6a2180c4768393d3!2sPorto%20de%20Santos!5e0!3m2!1spt-BR!2sbr!4v1700681530971!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="300px" 
+                style="border:0;"
+                title="Localização do Porto de Santos - Google Maps Embed"
+                class="iframe-propaganda"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="line-space-1-5">A Marinha do Brasil não é afiliada à Marinha de One Piece, mas o perigo é real!</p>
+        </div>
+    </div>
+            </section>
+
+        </main>
+
+        
+        <footer>
+            
+            <h6>© 2024 Projeto de Estudo - One Piece é propriedade de Eiichiro Oda / Shueisha.</h6>
+        </footer>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
