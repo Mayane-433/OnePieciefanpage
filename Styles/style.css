@@ -42,7 +42,7 @@ body {
 /* Estilos Semânticos */
 header {
     background-color: var(--cor-oceano);
-    color: white;
+    color: var(--cor-oceano);
     padding: 1.5rem 0;
     text-align: center;
     border-bottom: 5px solid var(--cor-ouro);
@@ -354,4 +354,5 @@ footer {
 .iframe-propaganda {
     border: 3px dashed var(--cor-terra);
     border-radius: 10px;
+
 }
