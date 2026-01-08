@@ -42,7 +42,7 @@ body {
 /* Estilos Semânticos */
 header {
     background-color: var(--cor-oceano);
-    color: var(--cor-oceano);
+    color: white;
     padding: 1.5rem 0;
     text-align: center;
     border-bottom: 5px solid var(--cor-ouro);
@@ -73,7 +73,7 @@ h2, h3 {
 }
 
 .topnav a, .dropbtn {
-    color: white;
+    color: var(--cor-oceano);
     text-decoration: none;
     padding: 0.75rem 1.5rem;
     display: inline-block;
@@ -356,3 +356,4 @@ footer {
     border-radius: 10px;
 
 }
+
