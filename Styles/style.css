@@ -80,8 +80,12 @@ h2, h3 {
     transition: background-color 0.3s, border-radius 0.3s;
     font-weight: 700;
     font-family: var(--fonte-corpo);
-    /* Garante que os links e o botão do dropdown estejam na mesma linha no desktop */
     float: none; 
+    background-color: var(--cor-oceano);
+    border: none;
+    border-radius: 5px;
+    vertical-align: middle; 
+    line-height: normal;  
 }
 
 .topnav a:hover, .active-page, .dropdown:hover .dropbtn {
@@ -356,5 +360,6 @@ footer {
     border-radius: 10px;
 
 }
+
 
 
