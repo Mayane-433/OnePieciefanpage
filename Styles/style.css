@@ -73,7 +73,7 @@ h2, h3 {
 }
 
 .topnav a, .dropbtn {
-    color: var(--cor-oceano);
+    color: white;
     text-decoration: none;
     padding: 0.75rem 1.5rem;
     display: inline-block;
@@ -356,4 +356,5 @@ footer {
     border-radius: 10px;
 
 }
+
 
